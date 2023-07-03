@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SPRiNG</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/logo-removebg-preview (2).png">
+</head>
+
+<body class="magicpattern text-white">
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-3 main-header">
+				<div class="row mt-1 position-fixed zi-lowest">
+					<div class="col-6 py-3">
+						<img src="img/logo2-removebg-preview-white.png" class="w-100">
+
+						<div class="mt-3 mb-3">
+							<hr>
+						</div>
+
+						<div class="d-flex align-items-start">
+							<div class="nav flex-column nav-pills me-3" id="v-pills-tab" aria-orientation="vertical">
+								<nav>
+									<ul class="nav nav-tabs border-0">
+										<li class="nav-item">
+											<h4> <a href="#" class="nav-link active" id="home-tab" data-bs-toggle="tab"
+													data-bs-target="#tab_home" type="button" role="tab"
+													aria-controls="tab_home" aria-selected="true"> Home </a> </h4>
+										</li>
+										<li class="nav-item">
+											<h4> <a href="#" class="nav-link" id="about-tab" data-bs-toggle="tab"
+													data-bs-target="#tab_about" type="button" role="tab"
+													aria-controls="tab_about"> About </a> </h4>
+										</li>
+										<li class="nav-item">
+											<h4> <a href="#" class="nav-link" id="portfolio-tab" data-bs-toggle="tab"
+													data-bs-target="#tab_portfolio" type="button" role="tab"
+													aria-controls="tab_portfolio"> Portfolio </a> </h4>
+										</li>
+										<li class="nav-item">
+											<h4> <a href="#" class="nav-link" id="new-tab" data-bs-toggle="tab"
+													data-bs-target="#tab_new" type="button" role="tab"
+													aria-controls="tab_new"> New </a> </h4>
+										</li>
+										<li class="nav-item">
+											<h4> <a href="#" class="nav-link" id="contact-tab" data-bs-toggle="tab"
+													data-bs-target="#tab_contact" type="button" role="tab"
+													aria-controls="tab_contact"> Contact </a> </h4>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-9 p-3 zi-highest">
+				<div class="mt-5"> &nbsp; </div>
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="tab_home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="mt-5">
+							<div class="home-article row bg-dark bg-gradient bg-opacity-25 p-3 ps-0 my-3 rounded">
+								<div class="col-3 text-center"> <img src="https://picsum.photos/150"> </div>
+								<div class="col-9">
+									<h5> Title </h5>
+									<hr>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+										unknown printer took a galley of type and scrambled it to make a type specimen book.
+										It has survived not only five centuries, but also the leap into electronic
+										typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+										the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+										with desktop publishing software like Aldus PageMaker including versions of Lorem
+										Ipsum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="tab_about" role="tabpanel" aria-labelledby="about-tab">
+						<div class="row mt-5">
+							<div class="col-10">
+								<div class="card w-100 bg-dark bg-gradient bg-opacity-25 text-center"
+									style="width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Website Profile</h5>
+										<p class="card-text">SPRiNG is a website created to satisfy the final semester
+											score requirement. </p>
+										<button class="btn btn-outline-primary" onclick="popNotification()">More
+											Info</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<img src="https://picsum.photos/90" class="rounded-circle">
+							</div>
+						</div>
+						<div class="row mt-5">
+							<div class="col-2">
+								<img src="https://picsum.photos/90" class="rounded-circle">
+							</div>
+							<div class="col-10">
+								<div class="card w-100 bg-dark bg-gradient bg-opacity-25 text-center"
+									style="width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Creator Profile</h5>
+										<p class="card-text">An informatics major student, currently working full time
+											as a programmer in a certain tech company. She may be a programmer but she's
+											still a student at heart, always carrying her textbooks to work and trying
+											to sneak in a few lectures during office hours. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="tab_portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+						<div class="mt-5">
+							<div class="row p-1">
+								<div class="col-6">
+									<div class="card w-100 bg-dark bg-gradient" style="width: 18rem;">
+										<img src="https://picsum.photos/150/70" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the
+												bulk of the card's content.</p>
+											<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="card w-100 bg-dark bg-gradient" style="width: 18rem;">
+										<img src="https://picsum.photos/150/70" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the
+												bulk of the card's content.</p>
+											<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row p-1">
+								<div class="col-6">
+									<div class="card w-100 bg-dark bg-gradient" style="width: 18rem;">
+										<img src="https://picsum.photos/150/70" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the
+												bulk of the card's content.</p>
+											<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="card w-100 bg-dark bg-gradient" style="width: 18rem;">
+										<img src="https://picsum.photos/150/70" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the
+												bulk of the card's content.</p>
+											<a href="#" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="tab_new" role="tabpanel" aria-labelledby="new-tab">
+						<div class="mt-5">
+							<div class="home-article row bg-dark bg-gradient bg-opacity-25 p-3 ps-0 my-3 rounded">
+								<div class="col-3 text-center"> <img src="https://picsum.photos/150"> </div>
+								<div class="col-9">
+									<h5> Title </h5>
+									<hr>
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolore iusto optio,
+										quidem quia iure consequuntur animi odio. Neque deleniti ab distinctio quis amet ad
+										natus voluptatum, aliquam fugiat tempore.</p>
+								</div>
+							</div>
+
+							<div class="home-article row bg-dark bg-gradient bg-opacity-25 p-3 ps-0 my-3 rounded">
+								<div class="col-3 text-center"> <img src="https://picsum.photos/150"> </div>
+								<div class="col-9">
+									<h5> Title </h5>
+									<hr>
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolore iusto optio,
+										quidem quia iure consequuntur animi odio. Neque deleniti ab distinctio quis amet ad
+										natus voluptatum, aliquam fugiat tempore.</p>
+								</div>
+							</div>
+
+							<div class="home-article row bg-dark bg-gradient bg-opacity-25 p-3 ps-0 my-3 rounded">
+								<div class="col-3 text-center"> <img src="https://picsum.photos/150"> </div>
+								<div class="col-9">
+									<h5> Title </h5>
+									<hr>
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolore iusto optio,
+										quidem quia iure consequuntur animi odio. Neque deleniti ab distinctio quis amet ad
+										natus voluptatum, aliquam fugiat tempore.</p>
+								</div>
+							</div>
+
+							<div class="home-article row bg-dark bg-gradient bg-opacity-25 p-3 ps-0 my-3 rounded">
+								<div class="col-3 text-center"> <img src="https://picsum.photos/150"> </div>
+								<div class="col-9">
+									<h5> Title </h5>
+									<hr>
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolore iusto optio,
+										quidem quia iure consequuntur animi odio. Neque deleniti ab distinctio quis amet ad
+										natus voluptatum, aliquam fugiat tempore.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="tab_contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="w-100 mt-5 bg-dark bg-gradient bg-opacity-25 rounded p-3">
+							<div class="form-group">
+								<label for="contact-name">Name</label>
+								<input type="text" id="contact-name" class="form-control">
+							</div>
+							<div class="form-group mt-3">
+								<label for="contact-email">Email</label>
+								<input type="text" id="contact-email" class="form-control">
+							</div>
+							<div class="form-group mt-3">
+								<label for="contact-message">Message</label>
+								<textarea type="text" id="contact-message" class="form-control"></textarea>
+							</div>
+							<div class="form-group text-end mt-3">
+								<button class="btn btn-outline-light">Submit</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
